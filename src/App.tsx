@@ -1,9 +1,19 @@
 import React from "react";
 
+const links = [
+  {
+    title: "About",
+    link: "https://x.com/noctacaelus",
+  },
+  {
+    title: "Collabo",
+    link: "",
+  },
+];
 function App() {
   return (
     <div
-      className="min-h-screen bg-cover bg-center bg-no-repeat relative"
+      className="min-h-screen bg-cover bg-no-repeat relative sm:bg-center bg-right"
       style={{
         backgroundImage: "url(https://suhasxi.com/imgbg.png)",
       }}
@@ -16,28 +26,17 @@ function App() {
             alt="Logo"
           />
 
-          <div className="space-y-3 mb-8 sm:space-y-4 sm:mb-12">
-            {["About", "Projects", "Writings", "Curator's Corner"].map(
-              (item) => (
-                <div
-                  key={item}
-                  className="text-base sm:text-lg font-normal hover:translate-x-2 transition-transform duration-300"
-                >
-                  {item}
-                </div>
-              )
-            )}
+          <div className="space-y-5 mb-8 sm:space-y-6 sm:mb-12">
+            {links.map((item) => (
+              <a
+                target="_blank"
+                href={item.link}
+                className="text-base sm:text-lg font-normal hover:translate-x-2 transition-transform duration-300 block"
+              >
+                {item.title}
+              </a>
+            ))}
           </div>
-
-          <a
-            href="https://x.com/noctacaelus"
-            className="inline-block transform transition-transform duration-300 hover:scale-110 space-y-1 sm:space-y-2"
-          >
-            <div className="text-base sm:text-[22px] font-bold">
-              You can find me on
-            </div>
-            <div className="text-base sm:text-lg font-bold">X</div>
-          </a>
         </div>
       </div>
     </div>
