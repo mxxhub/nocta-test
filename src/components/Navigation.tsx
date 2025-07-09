@@ -1,12 +1,12 @@
-import React from 'react';
-import { ExternalLink } from 'lucide-react';
+import React from "react";
+import { ExternalLink } from "lucide-react";
 
 const Navigation = () => {
   const navItems = [
-    { name: 'About', href: '#about' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Writings', href: '#writings' },
-    { name: 'Curator\'s Corner', href: '#curator' },
+    { name: "About", href: "#about" },
+    { name: "Projects", href: "#projects" },
+    { name: "Writings", href: "#writings" },
+    { name: "Curator's Corner", href: "#curator" },
   ];
 
   return (
@@ -17,7 +17,7 @@ const Navigation = () => {
             Suhas
           </h1>
         </div>
-        
+
         <div className="flex-1">
           <ul className="space-y-6">
             {navItems.map((item) => (
@@ -32,7 +32,7 @@ const Navigation = () => {
             ))}
           </ul>
         </div>
-        
+
         <div className="mt-auto">
           <div className="mb-4">
             <p className="text-gray-400 text-sm font-light tracking-wide">
