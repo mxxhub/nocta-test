@@ -15,14 +15,14 @@ function App() {
     <div
       className="min-h-screen bg-cover bg-no-repeat relative sm:bg-center bg-right"
       style={{
-        backgroundImage: "url(https://suhasxi.com/imgbg.png)",
+        backgroundImage: "url(/assets/bg.png)",
       }}
     >
       <div className="absolute top-1/4 left-6 sm:left-10 md:left-20 lg:left-40 p-4 sm:p-8 md:p-12">
         <div className="text-white max-w-xs sm:max-w-md md:max-w-lg">
           <img
             className="hover:scale-110 duration-300 mb-6 w-32 sm:w-40 md:w-48"
-            src="https://cdn.discordapp.com/attachments/1389579519295488000/1392411176352350270/nocta.png?ex=686f6f76&is=686e1df6&hm=7f2d1abbd8b1d816fbaa20d4d6f43e574c6d0e40fcfa390816cb93a923817114&"
+            src="/assets/nocta.png"
             alt="Logo"
           />
 
