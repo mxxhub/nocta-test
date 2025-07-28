@@ -7,7 +7,7 @@ const links = [
   },
   {
     title: "Collabo",
-    link: "",
+    link: "mailto:d@nocta.dev",
   },
 ];
 function App() {
